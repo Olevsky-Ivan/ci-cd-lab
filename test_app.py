@@ -4,7 +4,7 @@ from app import calculate_total
 
 
 def test_calculate_total():
-    assert calculate_total(100, 3) == 301
+    assert calculate_total(100, 3) == 300
 
 
 def test_negative_price():
