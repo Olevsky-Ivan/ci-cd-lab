@@ -59,4 +59,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/olevsky-ivan/ci-cd-lab:latest
+          tags: |
+            ghcr.io/olevsky-ivan/ci-cd-lab:latest
+            ghcr.io/olevsky-ivan/ci-cd-lab:${{ github.sha }}
