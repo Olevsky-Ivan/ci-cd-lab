@@ -1,0 +1,21 @@
+
+name: Self-hosted Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+
+    steps:
+      - name: Show Windows environment
+        shell: powershell
+        run: |
+          Write-Host "Runner is working!"
+          Write-Host "Computer: $env:COMPUTERNAME"
+          Write-Host "OS: Windows"
+
+      - name: Check Docker
+        shell: powershell
+        run: docker --version
