@@ -1,7 +1,7 @@
 
 services:
   api:
-    build: .
+    image: ghcr.io/olevsky-ivan/ci-cd-lab:latest
     ports:
       - "8000:8000"
     restart: unless-stopped
